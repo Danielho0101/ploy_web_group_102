@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>Headphone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card text-center" >
+            <img src="./photo/Nokia.png" class="card-img-top" alt="Nokia">
+            <div class="card-body">
+              <h5 class="card-title">NOKIA E3102 Headpgone</h5>
+              <p class="card-text">Immersive Sound. The Comfortable in-ear design provides excellent noise isolation for full music immerison. 
+                Never miss a charge Digital LED display on the battery case allows you to check your battery consumption anytime. Buletooth 5.1
+              </p>
+              <div class="card-footer">
+                <small class="text-body-black" style="display: block;">HKD$498</small>
+                <div class="marginStyle">
+                <button id="plus1" onclick="plus1()">+</button>
+                <input type="number" size="3px" value="0" id="value1" class="text-center" maxlength="2" max="99" min="0">
+                <button id="minus1" onclick="minus1()">-</button>
+                </div>
+                <a href="#" class="btn btn-primary" >Add to chart</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" >
+            <img src="./photo/AIWA.png" class="card-img-top" alt="AIWA">
+            <div class="card-body">
+              <h5 class="card-title">AIWA AT-X80A Headphone</h5>
+              <p class="card-text">Extremely lightweight! Single earbud weight only 3.5g, stable connection with low power consumption, superior sound quality!
+              </p>
+              <div class="card-footer">
+                <small class="text-body-black" style="display: block;">HKD$299</small>
+                <div class="marginStyle">
+                <button id="plus1" onclick="plus2()">+</button>
+                
+                <input type="text" size="3px" value="0" id="value2" class="text-center">
+                <button id="minus1" onclick="minus2()">-</button>
+                </div>
+
+                <a href="#" class="btn btn-primary" >Add to chart</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" >
+            <img src="./photo/defunc.png" class="card-img-top" alt="defunc">
+            <div class="card-body">
+              <h5 class="card-title">defunc True Entertainment Headphone</h5>
+              <p class="card-text">Optimized for streaming video and games, 60ms low-latency , built-in analog 3D stereo sound effects, dual microphone design with ENC technology, and dual listeners that can connect each earphone to a piece of equipment Compatible function
+              </p>
+              <div class="card-footer">
+                <small class="text-body-black" style="display: block;">HKD$599</small>
+                <div class="marginStyle">
+                <button id="plus1" onclick="plus3()">+</button>
+                <input type="text" size="3px" value="0" id="value3" class="text-center">
+                <button id="minus1" onclick="minus3()">-</button>
+                </div>
+                <a href="#" class="btn btn-primary" >Add to chart</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" >
+            <img src="./photo/Kasuyi.png" class="card-img-top" alt="Kasuyi">
+            <div class="card-body">
+              <h5 class="card-title">Kasuyi K11 Headphone</h5>
+              <p class="card-text">1. The Earphone take out automatic pairing. 2. 5.0 Bluetooth. 3. Support using only one unit of the earphone, can be paired and connected for unilateral use. 4. Graphene driver, High Quality Stereo. 5. Playing time around 5-6 hours.
+              <div class="card-footer">
+                <small class="text-body-black" style="display: block;">HKD$299</small>
+                <div class="marginStyle">
+                <button id="plus1" onclick="plus4()">+</button>
+                
+                <input type="text" size="3px" value="0" id="value4" class="text-center">
+                <button id="minus1" onclick="minus4()">-</button>
+                </div>
+
+                <a href="#" class="btn btn-primary" >Add to chart</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" >
+            <img src="./photo/JBL.png" class="card-img-top" alt="JBL">
+            <div class="card-body">
+              <h5 class="card-title">JBL WAVE 200TWS Headphone</h5>
+              <p class="card-text">Amp up your routine with the sound you love! Get powerful, JBL Deep Bass Sound and all the freedom of true wireless for up to 20 hours with the JBL Wave 200TWS!
+              </p>
+              <div class="card-footer">
+                <small class="text-body-black" style="display: block;">HKD$499</small>
+                <div class="marginStyle">
+                <button id="plus1" onclick="plus5()">+</button>
+                
+                <input type="text" size="3px" value="0" id="value5" class="text-center">
+                <button id="minus1" onclick="minus5()">-</button>
+                </div>
+
+                <a href="#" class="btn btn-primary" >Add to chart</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" >
+            <button class="btn btn-primary" onclick="reset()">Reset</button>
+            <p>Total price = </p>
+            <button onclick="total()">total</button>
+            <p id="total"></p>
+          </div>
+        </div>
+
+  
+      </div>
+
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<style>
+    h1,tr,td, div {
+        text-align: center;
+        margin: 1rem 1rem;
+    }
+
+form{
+    border: black 1px solid;
+}
+</style>
+<body>
+    <form action="login.php" method="post">
+        <h1>Login</h1>
+                <div>
+                <label for="">Username:</label>
+                <input type="text" name="username">
+                </div>
+                  
+                <div>
+                <label for="">Password</label>
+                <input type="text" name="password">
+                </div>
+            
+            <div>
+            <a href="#" >Forget password?</a>
+            </div>
+        
+            <div>
+            <input type="submit" value="Sign in">
+            <button>register</button>
+            <input type="reset" value="Reset">
+            </div>
+    </form>
+
+</body>
+</html>
