@@ -138,6 +138,7 @@ function minus5(){
 
 //total value
  function plustotal(){
+
     document.getElementById("total").innerHTML = total1 + total2 + total3 + total4 + total5;
 
 }
